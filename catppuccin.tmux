@@ -280,8 +280,8 @@ main() {
   set status-right-length "100"
 
   # messages
-  set message-style "fg=${thm_cyan},bg=${thm_gray},align=centre"
-  set message-command-style "fg=${thm_cyan},bg=${thm_gray},align=centre"
+  set message-style "fg=${thm_cyan},bg=default,align=centre"
+  set message-command-style "fg=${thm_cyan},bg=default,align=centre"
 
   # panes
   set pane-border-style "fg=${thm_gray}"
@@ -324,7 +324,7 @@ main() {
   # --------=== Modes
   #
   setw clock-mode-colour "${thm_blue}"
-  setw mode-style "fg=${thm_pink} bg=${thm_black4} bold"
+  setw mode-style "fg=${thm_pink} bg=default bold"
 
   tmux "${tmux_commands[@]}"
 }
